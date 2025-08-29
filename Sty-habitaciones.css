@@ -7,7 +7,6 @@
 body {
     font-family: "Roboto", sans-serif;
     color: #000000;
-    
 
 }
 
@@ -39,7 +38,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 10px;
 }
 
 #rosa {
@@ -75,106 +74,7 @@ h3 {
     color: #ff4b9f;
 }
 
-.contenido {
-    position: relative;
-    height: 70%;
-    gap: 20px;
-}
-
-.texto-superpuesto {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-
-.texto-superpuesto h1 {
-    font-size: 3rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    letter-spacing: 7px;
-}
-
-.imagen-fondo {
-    width: 100%;
-}
-
-.contenido img {
-    width: 100%;
-}
-
-.texto-superpuesto button {
-    margin-top: 20px;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 8px;
-    background-color: #ff4f87;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.texto-superpuesto button:hover {
-    background-color: #d63c6c;
-    transform: scale(1.05);
-}
-
-.carousel {
-    width: 100%;
-    overflow: hidden;
-    margin: auto;
-}
-
-.track {
-    display: flex;
-    animation: slide3 7s infinite;
-}
-
-.track img {
-    flex: 0 0 100%;
-    display: block;
-}
-
-.carousel:hover .track {
-    animation-play-state: paused;
-}
-
-@keyframes slide3 {
-    0% {
-        transform: translateX(0);
-    }
-
-    30% {
-        transform: translateX(0);
-    }
-
-    35% {
-        transform: translateX(-100%);
-    }
-
-    65% {
-        transform: translateX(-100%);
-    }
-
-    70% {
-        transform: translateX(-200%);
-    }
-
-    95% {
-        transform: translateX(-200%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
 .descripcion {
-    max-width: 1200px;
-    margin: 50px auto;
     display: grid;
     grid-template-columns: 360px 1fr;
     gap: 32px;
@@ -212,22 +112,6 @@ h3 {
     background-color: rgb(58, 24, 46);
 padding: 40px;
 }
-
-.ciudades-lista {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    text-align: center;
-}
-
-.ciudades-lista img {
-    width: 100%;
-    border-radius: 12px;
-    height: 300px;
-    object-fit: cover;
-}
-
 .ciudades h2,
 .ciudades p {
     text-align: center;
